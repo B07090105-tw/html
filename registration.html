@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <!--跟php伺服器連接-->
+        <!--設定php的名字與送資訊的方法-->
+        <form method="get" action="registration">
+        <!--造成寫ID的區塊-->
+        ID:<input type="text" name="id"><br>
+        <!--造成radiobox-->
+        GENDER:<input type="radio" name="sex" value="M" checked>男
+               <input type="radio" name="sex" value="F">女<br>
+        <!--造成checkbox-->
+        HOBBY:<input type="checkbox" name="interest" value="movie">電影
+              <input type="checkbox" name="interest" value="tv"checked>電視
+              <input type="checkbox" name="interest" value="bike">騎車<br>
+        <!--造成selectbox-->
+        PLACE:<select name="county">
+            <option value="taoyuan">桃園</option>
+            <option value="xinzhu" selected>新竹</option>
+            <option value="miaoli">苗栗</option>
+        </select> <br>
+        <!--造成寫字的區塊-->
+        自傳:<br><textarea name="autobiography" rows="10" cols="50"></textarea><br>
+        <!--造成註冊的按鍵-->
+        <input type="submit" value="註冊">
+        <!--造成清除的按鍵-->
+        <input type="reset" value="清除">
+        </form>
+    </body>
+</html>
